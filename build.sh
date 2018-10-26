@@ -35,8 +35,6 @@ for f in */; do
 
         cd "$f/www"
 
-        echo "$f - npm link unitejs-image-cli"
-        npm link unitejs-image-cli >> $BUILD_OUTPUT 2>&1
         echo "$f - npm install"
         npm install >> $BUILD_OUTPUT 2>&1
         echo "$f - gulp build"
